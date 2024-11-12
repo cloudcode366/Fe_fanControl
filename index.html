@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web với 5 nút và API</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Phần tử để hiển thị thông báo -->
+        <div id="notification">Bật thành công!</div>
+        
+        <div class="button-container">
+            <button class="button" onclick="callAPI('https://fan-control.onrender.com/api/fan/turn-on/1')">Speed/On</button>
+            <button class="button" onclick="callAPI('https://fan-control.onrender.com/api/fan/turn-on/2')">Off</button>
+            <button class="button" onclick="callAPI('https://fan-control.onrender.com/api/fan/turn-on/3')">Swing</button>
+            <button class="button" onclick="callAPI('https://fan-control.onrender.com/api/fan/turn-on/4')">Timer</button>
+            <button class="button" onclick="callAPI('https://fan-control.onrender.com/api/fan/turn-on/5')">Mode</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
