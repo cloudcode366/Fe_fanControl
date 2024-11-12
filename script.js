@@ -33,10 +33,7 @@ function callAPI(apiUrl) {
             console.log('Kết quả từ API:', data);
         }
     })
-    .catch(error => {
-        console.error('Đã xảy ra lỗi:', error);
-        alert('Đã xảy ra lỗi khi gọi API.');
-    });
+    ;
 }
 
 function callAPIEverySecond(url) {
