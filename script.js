@@ -38,3 +38,12 @@ function callAPI(apiUrl) {
         alert('Đã xảy ra lỗi khi gọi API.');
     });
 }
+
+function callAPIEverySecond(url) {
+    setInterval(() => {
+        callAPI(url);
+    }, 1000); // Gọi API mỗi 1 giây (1000ms)
+}
+
+// Ví dụ sử dụng
+callAPIEverySecond('https://fan-control.onrender.com/api/fan/refresh');
